@@ -5,9 +5,19 @@ const Layout = () => {
     <>
       <body>
         <header>
-          <Link to="/">Homea</Link>
-            <Link to="/app1">App1</Link>
-            <Link to="/app2">App2</Link>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/app1">App1</Link>
+              </li>
+              <li>
+                <Link to="/app2">App2</Link>
+              </li>
+            </ul>
+          </nav>
         </header>
 
         <main>
