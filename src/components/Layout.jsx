@@ -5,7 +5,7 @@ const Layout = () => {
     <>
       <body>
         <header>
-          <Link to="/">Home</Link>
+          <Link to="/">Homea</Link>
             <Link to="/app1">App1</Link>
             <Link to="/app2">App2</Link>
         </header>
