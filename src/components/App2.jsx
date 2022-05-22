@@ -1,8 +1,10 @@
 import React from "react"
-import { useParams } from "react-router-dom";
+import { useParams, useSearchParams } from "react-router-dom";
 
 function App2() {
   let params = useParams();
+  let [searchParams, setSearchParams] = useSearchParams();
+//console.log(params);
 
 
   return (

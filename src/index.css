@@ -480,3 +480,9 @@ blockquote footer {
   line-height: var(--line-height);
   padding: 1.5rem 0;
 }
+
+
+
+.red {
+  background-color: #eee;
+}

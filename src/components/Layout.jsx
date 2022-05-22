@@ -1,19 +1,26 @@
-import { Outlet, Link } from "react-router-dom"
+import { Outlet, NavLink, useLocation, useNavigate, useParams  } from "react-router-dom"
 
 const Layout = () => {
+  let location = useLocation();
+  let navigate = useNavigate();
+  let params = useParams();
+// console.log("loc",location);
+// console.log("nav",navigate);
+// console.log("param",params);
+
   return (
     <>
       <header>
         <nav>
           <ul>
             <li>
-              <Link to="/" className={({ isActive }) => isActive ? "red" : "blue"}>Home</Link>
+              <NavLink  to="/" className={({ isActive }) => isActive ? "red" : "blue"}>Home</NavLink>
             </li>
             <li>
-              <Link to="/app1" className={({ isActive }) => isActive ? "red" : "blue"}>App1</Link>
+              <NavLink  to="/tours" className={({ isActive }) => isActive ? "red" : "blue"}>Tours</NavLink>
             </li>
             <li>
-              <Link to="/app2" className={({ isActive }) => isActive ? "red" : "blue"}>App2</Link>
+              <NavLink  to="/app2" className={({ isActive }) => isActive ? "red" : "blue"}>App2</NavLink>
             </li>
           </ul>
         </nav>
